@@ -2,6 +2,7 @@ from setuptools import setup
 
 setup(
 	name = 'GetStatAPI',
+	packages = ['GetStatAPI'],
 	version = '0.1',
 	description = 'simple API wrapper for GetStat API',
 	author = 'BNMetrics',
