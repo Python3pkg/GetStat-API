@@ -20,7 +20,7 @@ from GetStatAPI import main, endpoints, helpers
 Instantiation:
 replace the SUBDOMAIN and APIKEY with your own
 ```Python
-stats = main(SUBDOMAIN, APIKEY)
+stats = main.GetStatAPI(SUBDOMAIN, APIKEY)
 ```
 
 To Make an API call to fetch all the sites on your account
