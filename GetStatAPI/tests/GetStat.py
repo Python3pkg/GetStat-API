@@ -1,0 +1,2 @@
+APIKEY = 'f7a82aa5166790cc04f983792a59ee5e58537ce7'
+SUBDOMAIN = 'iprospectlondon'
