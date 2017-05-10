@@ -41,7 +41,7 @@ Refer to the endpoints file for different API calls, call to each endpoint, simp
 ```python
 # get all the keywords
 # API call requires the parameter need to be passed as an argument
-sites.getAllKeywords(site_id=197)
+stats.getAllKeywords(site_id=197)
 
 ```
 
