@@ -1,5 +1,5 @@
 __pycache__
 .cache
-source/__pycache__
-source/tests
-source/.cache
+GetStatAPI/__pycache__
+GetStatAPI/tests
+GetStatAPI/.cache
