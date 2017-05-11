@@ -51,7 +51,7 @@ Find the following in endpoints.py
         "params":["site_id"]
       }
 ```
-In your file, you would want to do:
+In your own file, you would want to do following:
 ```python
 stats.getAllKeywords(site_id=176)
 
