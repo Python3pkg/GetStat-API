@@ -70,7 +70,8 @@ Once you make a specific call, you can filter the result. you can use the dot(.)
 ```python
 # If I want to find the status of a specific ranking url
 keywords = stats.getAllKeywords(site_id=123)
-returnResult = keywords.filterResult('keywordRankings.Google.Url', 'www.example.com/2134523/product/my-cool-product')
+returnResult = keywords.filterResult('keywordRankings.Google.Url', 
+                                     'www.example.com/2134523/product/my-cool-product')
 ```
 Have fun!
 
