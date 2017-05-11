@@ -60,9 +60,9 @@ stats.getAllKeywords(site_id=176)
 You can add more endpoints onto the endpoints.py file, following the same convention like so:
 ```python
 "name" : { 
-  "uri": "/myapi/endpoint"
-  "params": ["my_params"]
-}
+    "uri": "/myapi/endpoint"
+    "params": ["my_params"]
+  }
 ```
 And also make sure such API endpoint is available from GetStat.
 
