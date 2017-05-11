@@ -64,5 +64,13 @@ You can add more endpoints onto the endpoints.py file, following the same conven
 ```
 And also make sure such API endpoint is available from GetStat.
 
+
+## Filtering Result
+Once you make a specific call, you can filter the result. you can use the dot(.) notation for fetching the dictionary key and nested keys.
+```python
+# If I want to find the status of a specific ranking url
+keywords = stats.getAllKeywords(site_id=123)
+returnResult = keywords.filterResult('keywordRankings.Google.Url', 'www.example.com/2134523/product/my-cool-product')
+```
 Have fun!
 
