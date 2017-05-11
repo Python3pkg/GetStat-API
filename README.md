@@ -62,6 +62,7 @@ You can add more endpoints onto the endpoints.py file, following the same conven
 "name" : { 
   "uri": "/myapi/endpoint"
   "params": ["my_params"]
+}
 ```
 And also make sure such API endpoint is available from GetStat.
 
