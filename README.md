@@ -11,7 +11,7 @@ pip install GetStatAPI
 
 ## Basic Usage
 
-Require the package at the top of your file, you will need to require all the modules
+Require the package at the top of your file,  you will require all the modules
 
 ```python
 from GetStatAPI import main, endpoints, helpers
