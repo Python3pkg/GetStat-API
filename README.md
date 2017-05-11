@@ -1,5 +1,5 @@
 # GetStat-API
-This Package provides an easy and elegent way for you to get the information from your GetStat account.
+This Package provides an easy and elegant way for you to get the information from your GetStat account.
 
 ## Installation
 You can install this package via pip with:
