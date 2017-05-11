@@ -60,7 +60,7 @@ stats.getAllKeywords(site_id=176)
 You can add more endpoints onto the endpoints.py file, following the same convention like so:
 ```python
 "name" : { 
-    "uri": "/myapi/endpoint"
+    "uri": "/myapi/endpoint",
     "params": ["my_params"]
   }
 ```
