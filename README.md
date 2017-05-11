@@ -37,16 +37,32 @@ sites.filterResult('Url', 'www.example.com')
 ```
 
 ## endpoints file
-Refer to the endpoints file for different API calls, call to each endpoint, simplely add get + key name(uppercase first letter), for example, if I were to call other API endpoints:
+This is basically your configuration file which stores all the API endpoints and required params.
+The key of the dictionary elements that contains 'url' and 'params' are your calls to different API endpoints.
+
+Here is an example:
+if you want to call the API for fetching all the keywords for a specific site:
+
+find the following in endpoints.py
 ```python
-# get all the keywords
-# API call requires the parameter need to be passed as an argument
-stats.getAllKeywords(site_id=197)
+  "allKeywords": {
+        "uri":"/keywords/list" ,
+        "params":["site_id"]
+      }
+```
+In your file, you would want to do:
+```python
+stats.getAllKeywords(site_id=176)
 
 ```
 
-You can customize the endpoints however you want, if you prefer to change the name of the keys(such as 'sitesAll', 'rankings', feel free to do so, but 'url' and 'params' cannot be changed.
-when the keys are changes, you will need to change the method call using the 'get+' method.
+You can add more endpoints onto the endpoints.py file, following the same convention like so:
+```python
+"name" : { 
+  "uri": "/myapi/endpoint"
+  "params": ["my_params"]
+```
+And also make sure such API endpoint is available from GetStat.
 
-
+Have fun!
 
