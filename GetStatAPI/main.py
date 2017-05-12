@@ -153,7 +153,7 @@ class GetStatAPI:
 				responseURL = self.getResponseURL(helpers.getValue(allOptions, option + '.uri'))
 			else:
 				for param in params:
-					if param not in helpers.getValue(allOptions, option + '.params') and len(params) == 0:
+					if param not in helpers.getValue(allOptions, option + '.params') or len(params) == 0:
 						raise Exception('Invalid parameters passed')
 
 				responseURL = self.getResponseURL(helpers.getValue(allOptions, option + '.uri'),
