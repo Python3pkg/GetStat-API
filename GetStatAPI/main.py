@@ -58,7 +58,7 @@ class GetStatAPI:
 	def getEndpointList(self, parse_dict):
 	    list_final = []
 	    def setMergedList(parse_dict):
-	        for key, value in parse_dict.items():
+	        for key, value in list(parse_dict.items()):
 	            if isinstance(value, dict):
 	                setMergedList(value)
 	            elif not isinstance(value, list):
@@ -74,7 +74,7 @@ class GetStatAPI:
 	#
 	def getParams(self, parseParams):
 		params = defaultdict(dict)
-		for key, value in parseParams.items():
+		for key, value in list(parseParams.items()):
 			params[key] = value
 		params_encoded = urllib.parse.urlencode(params)
 
@@ -101,7 +101,7 @@ class GetStatAPI:
 	def getAllMethods(self, endpoints):
 	    methods = defaultdict(dict)
 	    def setmethods(endpoints):
-	        for key, value in endpoints.items():
+	        for key, value in list(endpoints.items()):
 	            if 'uri' in value:
 	                methods[key] = value
 	            else:
